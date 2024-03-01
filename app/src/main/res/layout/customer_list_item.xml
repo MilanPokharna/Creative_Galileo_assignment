@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="8dp"
+    style="Widget.App.CardStyle"
+    android:elevation="8dp"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/empImg"
+            android:padding="8dp"
+            app:layout_constraintWidth_percent="0.2"
+            android:src="@drawable/employee"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="ID - "
+            android:padding="4dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/txtMobile"
+            app:layout_constraintStart_toEndOf="@id/empImg"
+            app:layout_constraintTop_toTopOf="@id/empImg" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:text="Name - "
+            android:padding="4dp"
+            app:layout_constraintStart_toEndOf="@id/empImg"
+            app:layout_constraintTop_toBottomOf="@id/txtId"
+            app:layout_constraintEnd_toEndOf="@id/txtMobile"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtMobile"
+            android:text="Mobile - "
+            android:padding="4dp"
+            app:layout_constraintStart_toEndOf="@id/empImg"
+            app:layout_constraintTop_toBottomOf="@id/txtName"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:text="Email - "
+            android:padding="4dp"
+            app:layout_constraintStart_toEndOf="@id/empImg"
+            app:layout_constraintTop_toBottomOf="@id/txtMobile"
+            app:layout_constraintEnd_toEndOf="@id/txtMobile"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/custId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBaseline_toBaselineOf="@+id/txtId"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/txtId"
+            tools:text="hello" />
+
+        <TextView
+            android:id="@+id/custName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBaseline_toBaselineOf="@+id/txtName"
+            app:layout_constraintTop_toBottomOf="@id/custId"
+            app:layout_constraintStart_toEndOf="@id/txtName"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="hello" />
+
+        <TextView
+            android:id="@+id/custMobile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBaseline_toBaselineOf="@+id/txtMobile"
+            app:layout_constraintTop_toBottomOf="@id/custId"
+            app:layout_constraintStart_toEndOf="@id/txtMobile"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="hello" />
+
+        <TextView
+            android:id="@+id/custEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBaseline_toBaselineOf="@+id/txtEmail"
+            app:layout_constraintTop_toBottomOf="@id/custMobile"
+            app:layout_constraintStart_toEndOf="@id/txtEmail"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="hello" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

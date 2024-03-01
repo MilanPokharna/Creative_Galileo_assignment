@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Creative Galileo assignment</string>
+    <string name="oops">Oops! Coudndn\'t fetch customers.\nPlease check your Internet Connection.</string>
+    <string name="something_went_wrong">Something went wrong!\nPlease retry after sometime.</string>
+</resources>
